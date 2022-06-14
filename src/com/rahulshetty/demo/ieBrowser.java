@@ -1,4 +1,4 @@
-package defPack;
+package com.rahulshetty.demo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
