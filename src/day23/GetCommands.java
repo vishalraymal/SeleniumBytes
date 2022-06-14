@@ -23,11 +23,13 @@ public class GetCommands {
 		System.out.println("Browser window id: " + windowID);
 		driver.findElement(By.xpath("//a[contains(text(),'OrangeHRM')]")).click();
 		Set<String> windowIDs = driver.getWindowHandles();
-		/*
-		 * for(String winid : windowIDs) // return multiple browser windowIDs {
-		 * System.out.println(winid); }
-		 */
-		Iterator<String> Itr = windowIDs.iterator();
+
+		for (String winid : windowIDs) // return multiple browser windowIDs
+		{
+			System.out.println(winid);
+		}
+
+		// Iterator<String> Itr = windowIDs.iterator();
 
 		driver.quit();
 
