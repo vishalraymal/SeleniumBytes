@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 import com.google.common.base.Function;
 
-public class ImplicitWait {
+public class FluentWait {
 	public static void main(String[] args) throws InterruptedException  	
 	{
 		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
