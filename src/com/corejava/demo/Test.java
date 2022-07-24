@@ -2,17 +2,24 @@ package com.corejava.demo;
 
 public class Test {
 	public static void main(String[] args) {
+		int a=10, b=0;
 		
-		System.out.println("I am in pavan folder");
-		System.out.println("I am in VISHAL folder");
-		System.out.println("Now Vishal done more changes..");
-		System.out.println("Now Vishal done more changes on devlop branch..");
-		System.out.println("Now Vishal done more changes on devlop branch..");
-		System.out.println("Now Vishal done more changes on devlop branch..");
-		System.out.println("Now Vishal done more changes on devlop branch..");
-
-
-
+		try
+		{
+			System.out.println("hello: "+ a/b);
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println("hello catch block A");
+			e.printStackTrace();
+			System.out.println("hello catch block B");
+		}
+		finally
+		{
+			System.out.println("hello finally");
+			
+		}
 		
 	}
 
