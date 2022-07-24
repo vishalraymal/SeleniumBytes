@@ -1,8 +1,10 @@
-import java.time.Duration;
+package com.rahulshetty.demo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import java.time.Duration;
+
 
 public class LocatoreShdt1 {
 
@@ -13,8 +15,7 @@ public class LocatoreShdt1 {
 		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
 		driver.get("https://sso.teachable.com/secure/9521/identity/login/password?wizard_id=b7Q70PrY3vYDOCIAf5UMzsNQiiPe6YzD6bbRayGUIOovsGQJEhzhKuHyLwLgqrFApihB4Nrg-ydXX8lK7k1cXg");
 		driver.findElement(By.id("email")).sendKeys("Shahadat");
 		driver.findElement(By.name("password")).sendKeys("123455");
