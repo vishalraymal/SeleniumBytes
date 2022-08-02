@@ -20,12 +20,10 @@ public class ArrayListDemo {
 		a.add(1230);
 		a.add(0, "BOSS");
 		
-		System.out.println(a);
 		System.out.println(a.size());
 		
 		a.remove(2);
 		
-		System.out.println(a);
 		System.out.println(a.size());
 
 		

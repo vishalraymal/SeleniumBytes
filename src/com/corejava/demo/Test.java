@@ -1,25 +1,19 @@
 package com.corejava.demo;
 
+import java.util.Scanner;
+
 public class Test {
 	public static void main(String[] args) {
-		int a=10, b=0;
 		
-		try
+		int n=10;
+		
+		for(int i=1; i <10; i++)
 		{
-			System.out.println("hello: "+ a/b);
+			
 			
 		}
-		catch(Exception e)
-		{
-			System.out.println("hello catch block A");
-			e.printStackTrace();
-			System.out.println("hello catch block B");
-		}
-		finally
-		{
-			System.out.println("hello finally");
-			
-		}
+		
+		
 		
 	}
 
