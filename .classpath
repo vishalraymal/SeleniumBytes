@@ -134,5 +134,6 @@
 	<classpathentry kind="lib" path="C:/Users/ThisPc/Downloads/poi-bin-5.2.2-20220312/poi-bin-5.2.2/auxiliary/xml-apis-ext-1.3.04.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ThisPc/Downloads/poi-bin-5.2.2-20220312/poi-bin-5.2.2/auxiliary/xmlgraphics-commons-2.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ThisPc/Downloads/poi-bin-5.2.2-20220312/poi-bin-5.2.2/auxiliary/xmlsec-2.3.0.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
