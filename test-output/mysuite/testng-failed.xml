@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [mysuite]">
+  <test name="mytest(failed)" preserve-order="true">
+    <classes>
+      <class name="day36.Test1">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- day36.Test1 -->
+    </classes>
+  </test> <!-- mytest(failed) -->
+</suite> <!-- Failed suite [mysuite] -->

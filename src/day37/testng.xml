@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="GroupingDemoSuite" >
+	<test name="GroupingDemoTest" thred-count="2" run="parallel">
+	<groups>
+		<run>
+			<include name="sanity" />
+			<exclude name="regression" />
+		</run>
+	</groups>
+		<classes>
+			<class name="day37.GroupingDemo" />
+		</classes>	
+	</test>
+</suite>

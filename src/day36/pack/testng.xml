@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="DbConnectionSuite" >
+	<test name="DbConnTests" >
+		<classes>
+			<class name="day36.pack.DBTest1" />
+			<class name="day36.pack.DBTest2" />
+		</classes>
+	</test>
+</suite>

@@ -3,11 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="day35.SecondTestCase">
+      <class name="day37.DataProviderDemo">
         <methods>
-          <include name="login"/>
+          <include name="testLogin" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- day35.SecondTestCase -->
+      </class> <!-- day37.DataProviderDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

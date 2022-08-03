@@ -2,10 +2,12 @@ package day15;
 
 public class ThrowDemo {
 
-	void checksum(int num) {
+	void checksum(int num) 
+	{
 		if (num < 1) {
 			throw new ArithmeticException("Number is negative, cannot calculate square...");
-		} else {
+		} else 
+		{
 			System.out.println("The Square value of number is: " + (num * num));
 
 		}
@@ -14,8 +16,9 @@ public class ThrowDemo {
 
 	public static void main(String[] args) {
 		ThrowDemo td = new ThrowDemo();
+		int num= 0;
 		try {
-			td.checksum(0);
+			td.checksum(num);
 		} catch (Exception e) {
 			System.out.println("Invalid Input Provided..");
 		}

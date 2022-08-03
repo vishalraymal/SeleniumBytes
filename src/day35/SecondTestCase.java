@@ -35,7 +35,7 @@ public class SecondTestCase
 		password.sendKeys("admin");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		String loginDashboard= driver.findElement(By.xpath("//h1[normalize-space()='Dashboard']")).getText();
-		Assert.assertEquals(loginDashboard, "Dashboards","Labels are not equals..");
+		Assert.assertEquals(loginDashboard, "Dashboard","Labels are not equals..");
 	}
 	
 	@Test(priority=3)
