@@ -2,39 +2,24 @@
 <testng-results total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-03T12:37:30Z" name="Default suite" finished-at="2022-08-03T12:37:47Z" duration-ms="16741">
+  <suite started-at="2022-08-04T16:16:43Z" name="Default suite" finished-at="2022-08-04T16:16:43Z" duration-ms="93">
     <groups>
     </groups>
-    <test started-at="2022-08-03T12:37:30Z" name="Default test" finished-at="2022-08-03T12:37:47Z" duration-ms="16741">
-      <class name="day37.DataProviderDemo">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:day37.DataProviderDemo@3daf7722]" started-at="2022-08-03T18:07:30Z" name="setUp" finished-at="2022-08-03T18:07:41Z" duration-ms="11459" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:day37.DataProviderDemo@3daf7722]" started-at="2022-08-03T18:07:41Z" name="testLogin" data-provider="dp" finished-at="2022-08-03T18:07:44Z" duration-ms="2267" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@test.admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin4123]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-08-04T16:16:43Z" name="Default test" finished-at="2022-08-04T16:16:43Z" duration-ms="93">
+      <class name="day38.HardVsSoftAssertion">
+        <test-method signature="test_hardAssertion()[pri:0, instance:day38.HardVsSoftAssertion@6cc558c6]" started-at="2022-08-04T21:46:43Z" name="test_hardAssertion" finished-at="2022-08-04T21:46:43Z" duration-ms="27" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Title not matched... expected [nopCommerce demo store] but found [nopCommerce demo store. Login]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title not matched... expected [nopCommerce demo store] but found [nopCommerce demo store. Login]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:89)
 	at org.testng.Assert.failNotEquals(Assert.java:489)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:171)
-	at day37.DataProviderDemo.testLogin(DataProviderDemo.java:40)
+	at org.testng.Assert.assertEquals(Assert.java:281)
+	at org.testng.Assert.assertEquals(Assert.java:291)
+	at day38.HardVsSoftAssertion.test_hardAssertion(HardVsSoftAssertion.java:12)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -64,31 +49,19 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:day37.DataProviderDemo@3daf7722]" started-at="2022-08-03T18:07:44Z" name="testLogin" data-provider="dp" finished-at="2022-08-03T18:07:46Z" duration-ms="2585" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pavanoltraining@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test3]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- test_hardAssertion -->
+        <test-method signature="test_softAssertion()[pri:0, instance:day38.HardVsSoftAssertion@6cc558c6]" started-at="2022-08-04T21:46:43Z" name="test_softAssertion" finished-at="2022-08-04T21:46:43Z" duration-ms="32" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Title not matched... expected [nopCommerce demo store] but found [nopCommerce demo store. Login]]]>
+              <![CDATA[The following asserts failed:
+	expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title not matched... expected [nopCommerce demo store] but found [nopCommerce demo store. Login]
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:171)
-	at day37.DataProviderDemo.testLogin(DataProviderDemo.java:40)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at day38.HardVsSoftAssertion.test_softAssertion(HardVsSoftAssertion.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,12 +91,8 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:day37.DataProviderDemo@3daf7722]" started-at="2022-08-03T18:07:46Z" name="tearDown" finished-at="2022-08-03T18:07:47Z" duration-ms="389" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- day37.DataProviderDemo -->
+        </test-method> <!-- test_softAssertion -->
+      </class> <!-- day38.HardVsSoftAssertion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

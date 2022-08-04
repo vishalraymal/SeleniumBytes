@@ -3,13 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="day37.DataProviderDemo">
+      <class name="day38.HardVsSoftAssertion">
         <methods>
-          <include name="testLogin" invocation-numbers="0 1"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="test_hardAssertion"/>
+          <include name="test_softAssertion"/>
         </methods>
-      </class> <!-- day37.DataProviderDemo -->
+      </class> <!-- day38.HardVsSoftAssertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
