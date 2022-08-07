@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)" preserve-order="true">
+<suite name="Failed suite [myTestListenerSuite]">
+  <listeners>
+    <listener class-name="day39.MyListener"/>
+  </listeners>
+  <test name="mytestListener(failed)" preserve-order="true">
     <classes>
       <class name="day39.MyTest">
         <methods>
@@ -10,5 +13,5 @@
         </methods>
       </class> <!-- day39.MyTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- mytestListener(failed) -->
+</suite> <!-- Failed suite [myTestListenerSuite] -->

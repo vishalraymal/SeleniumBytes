@@ -29,35 +29,33 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">ExtentReport_Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">23.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="2">day38.HardVsSoftAssertion<td><a href="#m1"><b>test_hardAssertion</b>  </a></td><td class="numi">1</td><td>1659629803314</td><td class="numi">27</td></tr><tr class="failedodd"><td><a href="#m2"><b>test_softAssertion</b>  </a></td><td class="numi">1</td><td>1659629803349</td><td class="numi">32</td></tr>
+<tr><th colspan="4">ExtentReport_Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">day39.extentreports.LoginTest<td><a href="#m1"><b>testLogin</b>  </a></td><td class="numi">1</td><td>1659892617488</td><td class="numi">9407</td></tr>
+<tr><th colspan="4">ExtentReport_Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">day39.extentreports.LoginTest<td><a href="#m2"><b>testLogout</b>  </a></td><td class="numi">1</td><td>1659892626903</td><td class="numi">0</td></tr>
+<tr><th colspan="4">ExtentReport_Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">day39.extentreports.LoginTest<td><a href="#m3"><b>testLogo</b>  </a></td><td class="numi">1</td><td>1659892617262</td><td class="numi">173</td></tr>
 </table>
-<h1>Default test</h1>
-<a id="m1"></a><h2>day38.HardVsSoftAssertion:test_hardAssertion</h2>
+<h1>ExtentReport_Test</h1>
+<a id="m1"></a><h2>day39.extentreports.LoginTest:testLogin</h2>
 <div style="padding-left:3em">
-<p>expected [true] but found [false]</p>
+<p>expected [false] but found [true]</p>
 org.testng.Assert.fail(Assert.java:89)
 <br/>at org.testng.Assert.failNotEquals(Assert.java:489)
 <br/>at org.testng.Assert.assertEquals(Assert.java:118)
 <br/>at org.testng.Assert.assertEquals(Assert.java:281)
 <br/>at org.testng.Assert.assertEquals(Assert.java:291)
-<br/>at day38.HardVsSoftAssertion.test_hardAssertion(HardVsSoftAssertion.java:12)
+<br/>at day39.extentreports.LoginTest.testLogin(LoginTest.java:58)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>day38.HardVsSoftAssertion:test_softAssertion</h2>
-<div style="padding-left:3em">
-<p>The following asserts failed:
-	expected [false] but found [true]</p>
-org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-<br/>at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-<br/>at day38.HardVsSoftAssertion.test_softAssertion(HardVsSoftAssertion.java:25)
-<br/>25 lines not shown
-</div>
+<a id="m2"></a><h2>day39.extentreports.LoginTest:testLogout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>day39.extentreports.LoginTest:testLogo</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

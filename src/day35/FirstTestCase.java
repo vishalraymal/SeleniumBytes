@@ -10,21 +10,21 @@ public class FirstTestCase {
 		System.out.println("Opening application...");
 	}
 
-	@Test(priority=1)
+	@Test(priority='b')
 	public void loginApp()
 	{
 		System.out.println("Login application...");
 
 	}
 	
-	@Test(priority=2)
+	@Test(priority='a')
 	public void logoutApp()
 	{
 		System.out.println("Logout application...");
 
 	}
 	
-	@Test(priority=3)
+	//@Test(priority=3)
 	public void closeApp()
 	{
 		System.out.println("closing application...");

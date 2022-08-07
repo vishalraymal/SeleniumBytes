@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="MyExtentDemoSuite">
+	<listeners>
+		<listener class-name="day39.extentreports.ExtentReportManager" />
+	</listeners>
+	<test name="ExtentReport_Test">
+		<classes>
+			<class name="day39.extentreports.LoginTest" />
+		</classes>
+	</test>
+</suite>
