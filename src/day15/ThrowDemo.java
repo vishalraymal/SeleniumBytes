@@ -16,7 +16,7 @@ public class ThrowDemo {
 
 	public static void main(String[] args) {
 		ThrowDemo td = new ThrowDemo();
-		int num= 0;
+		int num= 15;
 		try {
 			td.checksum(num);
 		} catch (Exception e) {

@@ -1,7 +1,6 @@
 package day30;
 
-import java.util.concurrent.TimeUnit;
-
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,14 +11,13 @@ import org.openqa.selenium.interactions.Actions;
 public class SliderDemo {
 	
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		ChromeOptions option= new ChromeOptions();
 	   //option.addArguments("--headless");
 		option.setAcceptInsecureCerts(true);
 		
 		WebDriver driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://www.jqueryscript.net/demo/Price-Range-Slider-jQuery-UI/");
 		
 		Actions act = new Actions(driver);

@@ -1,9 +1,10 @@
 package day27;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,10 +13,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class HandleBrowerWindows {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","D://WebDrivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.findElement(By.linkText("OrangeHRM, Inc")).click();
 		

@@ -29,8 +29,8 @@ public class E2E_UI_Handling {
 		// Thread.sleep(500);
 
 		// Explicit wait
-		WebDriverWait w = new WebDriverWait(driver, 5);
-		w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@class,'ui-state-default')]")));
+	//	WebDriverWait w = new WebDriverWait(driver, 5);
+	//	w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(@class,'ui-state-default')]")));
 
 		// select current date from calendar
 		// driver.findElement(By.xpath("//div[@id='ui-datepicker-div']")).click();

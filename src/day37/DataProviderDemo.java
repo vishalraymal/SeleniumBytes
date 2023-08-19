@@ -21,7 +21,6 @@ public class DataProviderDemo {
 	@BeforeClass
 	public void setUp()
 	{
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

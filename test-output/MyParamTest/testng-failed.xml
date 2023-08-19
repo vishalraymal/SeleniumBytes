@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MyParamTest]">
-  <parameter name="browser" value="edge"/>
-  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
-  <test name="parameterTest(failed)" preserve-order="true">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [MyParamTest]">
+  <test thread-count="2" parallel="tests" name="edgeTest(failed)">
     <parameter name="browser" value="edge"/>
     <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
     <classes>
       <class name="day38.ParamTest">
         <methods>
-          <include name="setUp"/>
           <include name="testTitle"/>
+          <include name="setUp"/>
+          <include name="testLogo"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- day38.ParamTest -->
     </classes>
-  </test> <!-- parameterTest(failed) -->
+  </test> <!-- edgeTest(failed) -->
+  <test thread-count="2" parallel="tests" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+    <classes>
+      <class name="day38.ParamTest">
+        <methods>
+          <include name="testTitle"/>
+          <include name="setUp"/>
+          <include name="testLogo"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- day38.ParamTest -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test thread-count="2" parallel="tests" name="chormeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/"/>
+    <classes>
+      <class name="day38.ParamTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testLogo"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- day38.ParamTest -->
+    </classes>
+  </test> <!-- chormeTest(failed) -->
 </suite> <!-- Failed suite [MyParamTest] -->

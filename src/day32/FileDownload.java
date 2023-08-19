@@ -21,7 +21,6 @@ public class FileDownload {
 		ChromeOptions options = new ChromeOptions();
 	    options.addArguments("--disable-notifications");
 		options.setExperimentalOption("prefs", hm);
-		System.setProperty("webdriver.chrome.driver", "D:/WebDrivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver(options);   */
 		
 		//Firefox
@@ -33,7 +32,6 @@ public class FileDownload {
 		profile.setPreference("browser.download.manager.showWhenStarting",false);  // To disable download message confirmation
 		FirefoxOptions options = new FirefoxOptions();
 		options.setProfile(profile);
-		System.setProperty("webdriver.gecko.driver", "D://WebDrivers//geckodriver.exe");
 		WebDriver driver = new FirefoxDriver(options);
 		
 				

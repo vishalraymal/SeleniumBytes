@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ScrollingWebPage {
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		//ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.countries-ofthe-world.com/flags-of-the-world.html");
@@ -35,11 +34,20 @@ public class ScrollingWebPage {
 		long value= (Long) js.executeScript("return window.pageYOffset");
 		System.out.println("Pixel of the page: "+ value);
 		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		// Go back to initial page
 		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
 		long value1= (Long) js.executeScript("return window.pageYOffset");
 		System.out.println("Pixel of the page: "+ value1);
 		
+		
+		driver.quit();
 		
 		
 		

@@ -17,7 +17,7 @@ import com.google.common.base.Function;
 public class FluentWaitDemo {
 	public static void main(String[] args) throws InterruptedException  	
 	{
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
+	/*	System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		// for its presence every 5 seconds
@@ -44,7 +44,7 @@ public class FluentWaitDemo {
 		lnkWeb.click();
 		
 		
-		
+		*/
 		
 	}
 

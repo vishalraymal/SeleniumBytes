@@ -1,6 +1,6 @@
 package day26;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,10 +11,9 @@ public class HandleFrames {
 	public static void main(String[] args) throws InterruptedException
 	{
 
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html");
 		
 		// First Frame

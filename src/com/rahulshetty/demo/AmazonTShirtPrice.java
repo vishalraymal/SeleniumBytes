@@ -19,8 +19,8 @@ public class AmazonTShirtPrice {
 		
 		driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("t shirt for men full sleev stylish");
 		driver.findElement(By.xpath("//input[@id='nav-search-submit-button']")).click();
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		List<WebElement> itemCost = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='a-row a-size-base a-color-base']//span[@aria-hidden]/span[2]")));
+//		WebDriverWait wait = new WebDriverWait(driver, 20);
+	//	List<WebElement> itemCost = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='a-row a-size-base a-color-base']//span[@aria-hidden]/span[2]")));
 	/*	for(WebElement eachItemCost : itemCost)
 		{
 			String s= eachItemCost.getText();
@@ -34,14 +34,14 @@ public class AmazonTShirtPrice {
 				
 		} */
 		
-		for(int i=1; i < itemCost.size() ; i++)
-		{
-				if(i<=3)
-				{
-					System.out.println(i+" Item cost : "+itemCost.get(i).getText());
-				}
-			
-		}
+//		for(int i=1; i < itemCost.size() ; i++)
+//		{
+//				if(i<=3)
+//				{
+//					System.out.println(i+" Item cost : "+itemCost.get(i).getText());
+//				}
+//			
+//		}
 			
 			
 		

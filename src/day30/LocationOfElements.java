@@ -1,5 +1,6 @@
 package day30;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -12,14 +13,13 @@ public class LocationOfElements {
 	
 	public static void main(String[] args) {
 		
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		ChromeOptions option= new ChromeOptions();
 	    option.addArguments("--headless");
 		option.setAcceptInsecureCerts(true);
 		
 		WebDriver driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 		Point poc = driver.findElement(By.xpath("//div[@id='divLogo']/img")).getLocation();

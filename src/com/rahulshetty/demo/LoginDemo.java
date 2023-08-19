@@ -11,8 +11,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginDemo {
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
+	/*	System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MILLISECONDS);
@@ -41,7 +42,7 @@ public class LoginDemo {
 		driver.findElement(By.id("terms"));
 		driver.findElement(By.xpath("//input[@id='signInBtn']")).click();
 		
-		
+		*/
 	}
 
 }

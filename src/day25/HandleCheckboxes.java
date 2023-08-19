@@ -1,7 +1,7 @@
 package day25;
 
+import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,10 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HandleCheckboxes {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://itera-qa.azurewebsites.net/home/automation");
 		
 		//1. Select specific checkbox

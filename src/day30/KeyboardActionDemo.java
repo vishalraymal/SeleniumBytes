@@ -1,6 +1,6 @@
 package day30;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,7 +12,6 @@ import org.openqa.selenium.interactions.Actions;
 public class KeyboardActionDemo {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "D://WebDrivers//chromedriver.exe");
 		ChromeOptions option= new ChromeOptions();
 	   //option.addArguments("--headless");
 		option.setAcceptInsecureCerts(true);
@@ -20,7 +19,7 @@ public class KeyboardActionDemo {
 		WebDriver driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://text-compare.com/");
 		
 		driver.findElement(By.xpath("//textarea[@id='inputText1']")).sendKeys("HI, I am Vishal");

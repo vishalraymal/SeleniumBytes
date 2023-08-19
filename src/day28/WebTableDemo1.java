@@ -1,7 +1,7 @@
 
 package day28;
 
-import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,11 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebTableDemo1 {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","D://WebDrivers//chromedriver.exe");
+		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		//1. How to find rows in table
 		int rows = driver.findElements(By.xpath("//table[@name='BookTable']//tr")).size();
